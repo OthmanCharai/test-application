@@ -1,0 +1,12 @@
+models:
+  Country:
+    name: string
+    relationships:
+      hasMany: City
+  City:
+    name: string
+    relationships:
+      belongsTo: Country
+
+controllers:
+#

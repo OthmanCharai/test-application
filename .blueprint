@@ -1,0 +1,11 @@
+created:
+    - database/factories/CountryFactory.php
+    - database/factories/CityFactory.php
+    - database/migrations/2023_12_06_175826_create_countries_table.php
+    - database/migrations/2023_12_06_175827_create_cities_table.php
+    - app/Models/Country.php
+    - app/Models/City.php
+models:
+    User: {  }
+    Country: { name: string, relationships: { hasMany: City } }
+    City: { name: string, relationships: { belongsTo: Country } }
